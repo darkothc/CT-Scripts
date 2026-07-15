@@ -13,7 +13,7 @@ while True:
         break
 
     for i in range(6):
-        if code[i] >= 100:
+        if code[i] > 100:
             break
             
         if not result[i]:
