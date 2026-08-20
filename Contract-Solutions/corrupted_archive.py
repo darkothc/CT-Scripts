@@ -13,7 +13,8 @@ for r1 in range(10):
         for r2 in range(10):
             for c2 in range(10):
                 word2 = archive.flip(r2, c2)
-                print(pairs)
+                #print(pairs)
+                
                 if (r1 > r2) or (r1 == r2 and c1 >= c2):
                     continue
     
