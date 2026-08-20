@@ -1,10 +1,11 @@
 log_attempts = 0
 
-code = [0,0,0,0,0,0]
+code = [0, 0, 0, 0, 0, 0]
 lock = self.contract.lock
-result = lock.intercept(code)
 
 while True:
+    result = lock.intercept(code)
+    
     if log_attempts:
         print(f"Code: {code} \n Check: {result}")
 
