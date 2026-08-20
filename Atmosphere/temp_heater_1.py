@@ -1,7 +1,6 @@
-
 log_status = 0
 
-heater = get_component("heater_1")
+heater = get_component(self.id)
 therm_state = []
 power_watts = []
 
@@ -39,4 +38,3 @@ while True:
 
         if log_status:
             print(f"--------\nThermal_State({heater.thermal_state()}) set to optimal Power({power_watts[therm_state.index(heater.thermal_state())]})watts Eff= {heater.efficiency()} \nHeater Output: {heater.output()}\n--------")
-
