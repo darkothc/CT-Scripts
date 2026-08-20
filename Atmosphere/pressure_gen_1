@@ -1,0 +1,13 @@
+
+print(self.id, " Running..")
+
+while True:
+    next_wl = self.next_window_low()
+    next_wh = self.next_window_high()
+    s_gauge = self.gauge()
+    
+
+    if next_wl < s_gauge < next_wh:
+        self.sync()
+        #print(self.sync().message)
+        
