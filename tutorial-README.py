@@ -3,10 +3,10 @@
 # boot.py ---------------------------------------------------------------------------------
 boot()
 
-# power.py ---------------------------------------------------------------------------------
+# planet_power.py ---------------------------------------------------------------------------------
 activate_power()
 
-# sensors.py ---------------------------------------------------------------------------------
+# planet_sensors.py ---------------------------------------------------------------------------------
 activate_sensors()
 
 # uplink.py ---------------------------------------------------------------------------------
@@ -22,11 +22,6 @@ component = get_component("oxygen_sensor")
 value = component.get_value()
 print(value)
 new_value = self.calibrate(value * 100)
-
-c = self.contract
-t = get_component("transmitter")
-t.connect("earth")
-t.transmit(c.id, new_value)
 
 # pressure_sensor.py ---------------------------------------------------------------------------------
 component = get_component("pressure_sensor")
